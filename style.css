@@ -1,0 +1,221 @@
+:root {
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    border-radius: 10px;
+    background: var(--white);
+    border-radius: 30px;
+}
+
+.contai-left {
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px 40px 40px;
+    gap: 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    border-radius: 30px;
+}
+
+.category {
+    font-weight: 500;
+    color: var(--light-lavender);
+    font-size: 20px;
+}
+
+.score-circle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--Violet-blue), var(--Persian-blue));
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.bigger {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.smaller {
+    font-size: 15px;
+    color: var(--light-lavender);
+}
+
+h1 {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 500;
+    margin: -10px 0;
+}
+
+.p-left {
+    text-align: center;
+    font-size: 14px;
+    color: var(--light-lavender);
+    max-width: 190px;
+}
+
+.contai-right {
+    padding: 30px 20px;
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 50%;
+}
+
+.summary {
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    padding-left: 15px;
+}
+
+.summary-item {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.reaction {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    justify-content: space-between;
+    font-size: 15px;
+}
+    
+.all-item {
+    border-radius: 10px;
+    height: 45px;
+}
+
+.reaction-left {
+    display: flex;
+    gap: 10px;
+    color: var(--Light-red);
+    font-weight: 700;
+}
+
+img {
+    width: 17px;
+    height: auto;
+}
+
+.memory {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: hsla(39, 100%, 56%, 0.1);
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.memory-left {
+    display: flex;
+    gap: 10px;
+    color: var(--Orangey-yellow);
+    font-weight: 700;
+}
+
+.verbal {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.verbal-left {
+    display: flex;
+    gap: 10px;
+    color: var(--Green-teal);
+    font-weight: 700;
+}
+
+.visual {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: hsla(234, 85%, 45%, 0.1);
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.visual-left {
+    display: flex;
+    gap: 10px;
+    color: var(--Cobalt-blue);
+    font-weight: 700;
+}
+
+.continue-button {
+    background-color: var(--dark-gray-blue);
+    color: var(--light-lavender);
+    width: 200px;
+    height: 45px;
+    border-radius: 999px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.continue-button:hover {
+    background: linear-gradient(to bottom, var(--Light-slate-blue), var(--Light-royal-blue));
+    color: var(--white);
+    border: none;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 375px;
+    }
+}
